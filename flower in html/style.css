@@ -1,0 +1,94 @@
+body {
+    margin: 0px;
+    padding: 0;
+    background-color: black;
+    text-align: center;
+}
+
+#container {
+    height: 600px;
+    width: 600px;
+    background-color: transparent;
+    display: inline-block;
+}
+
+.circle {
+    content: '';
+    position: absolute;
+    top: 37.5%;
+    left: 50%;
+    height: 50px;
+    width: 50px;
+    border-radius: 50%;
+    background-color: chocolate;
+    transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    box-shadow: 1px 5px 10px;
+}
+
+.circle::after {
+    display: block;
+
+}
+
+.box1 {
+    height: 150px;
+    width: 150px;
+    border: 2px solid blck;
+    border-radius: 35% 65% 0% 100% / 53% 100% 0% 47%;
+    background-image: linear-gradient(to bottom right, rgb(255, 87, 205), lightpink);
+    display: inline-block;
+    box-shadow: 1px 5px 10px rgba(255, 150, 167, 0.685);
+    border-left: 5px solid rgba(255, 0, 128, 0.507);
+
+    margin: 0;
+}
+
+.box2 {
+    height: 150px;
+    width: 150px;
+    border: 2px solid whit;
+    border-radius: 51% 49% 100% 0% / 100% 53% 47% 0%;
+    background-image: linear-gradient(to bottom left, rgb(255, 87, 205), lightpink);
+    display: inline-block;
+    text-align: right;
+    box-shadow: 1px 5px 10px rgba(255, 150, 167, 0.685);
+    border-left: 5px solid rgba(255, 0, 128, 0.507);
+    margin: 0;
+}
+
+.box3 {
+    height: 150px;
+    width: 150px;
+    border: 2px solid back;
+    border-radius: 0% 100% 57% 43% / 0% 50% 50% 100%;
+    background-image: linear-gradient(to bottom right, lightpink, rgb(255, 87, 205));
+    display: inline-block;
+    box-shadow: 1px 5px 10px rgba(255, 150, 167, 0.685);
+    border-left: 5px solid rgba(255, 0, 128, 0.507);
+    margin: 0;
+}
+
+.box4 {
+    height: 150px;
+    width: 150px;
+    border: 2px solid blck;
+    border-radius: 100% 0% 40% 60% / 55% 0% 100% 45%;
+    background-image: linear-gradient(to bottom left, lightpink, rgb(255, 87, 205));
+    display: inline-block;
+    box-shadow: 1px 5px 10px rgba(255, 150, 167, 0.685);
+    border-left: 5px solid rgba(255, 0, 128, 0.507);
+    margin: 0;
+}
+
+.msg {
+    height: 35px;
+    width: 100%;
+    color: transparent;
+    transition: .5s;
+}
+
+.msg:hover {
+    font-size: 25px;
+    color: white;
+}
