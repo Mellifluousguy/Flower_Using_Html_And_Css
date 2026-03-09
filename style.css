@@ -3,19 +3,23 @@ body {
     padding: 0;
     background-color: black;
     text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    width: 100%;
 }
 
 #container {
-    height: 600px;
-    width: 600px;
     background-color: transparent;
     display: inline-block;
+
 }
 
 .circle {
     content: '';
     position: absolute;
-    top: 37.5%;
+    top: 47%;
     left: 50%;
     height: 50px;
     width: 50px;
